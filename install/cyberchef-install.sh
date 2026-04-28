@@ -17,9 +17,9 @@ msg_info "Installing Dependencies"
 $STD apt-get install -y caddy
 msg_ok "Installed Dependencies"
 
-NODE_VERSION="20" setup_nodejs
+NODE_VERSION="24" setup_nodejs
 
-fetch_and_deploy_gh_release "cyberchef" "gchq/CyberChef" "tarball" "latest" "/opt/cyberchef"
+fetch_and_deploy_gh_release "cyberchef" "gchq/CyberChef" "tarball"
 
 msg_info "Building CyberChef (Patience)"
 cd /opt/cyberchef

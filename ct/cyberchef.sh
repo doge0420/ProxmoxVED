@@ -34,7 +34,7 @@ function update_script() {
     systemctl stop caddy
     msg_ok "Stopped $APP"
 
-    CLEAN_INSTALL=1 fetch_and_deploy_gh_release "cyberchef" "gchq/CyberChef" "tarball" "latest" "/opt/cyberchef"
+    CLEAN_INSTALL=1 fetch_and_deploy_gh_release "cyberchef" "gchq/CyberChef" "tarball"
 
     msg_info "Building $APP (Patience)"
     cd /opt/cyberchef
