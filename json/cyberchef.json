@@ -1,0 +1,24 @@
+{
+  "name": "CyberChef",
+  "slug": "cyberchef",
+  "description": "The Cyber Swiss Army Knife - a web app for encryption, encoding, compression and data analysis",
+  "type": "ct",
+  "privileged": false,
+  "documentation": "https://github.com/gchq/CyberChef",
+  "website": "https://gchq.github.io/CyberChef",
+  "logo": "https://cdn.jsdelivr.net/gh/selfhst/icons@main/webp/cyberchef-light.webp",
+  "config_path": "/etc/caddy/Caddyfile",
+  "install_methods_json": [
+    {
+      "type": "default",
+      "resources": {
+        "cpu": 2,
+        "ram": 4096,
+        "hdd": 4,
+        "os": "Debian",
+        "version": "13"
+      }
+    }
+  ],
+  "notes_json": []
+}
